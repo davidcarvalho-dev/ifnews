@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>IF NEWS</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logomarca do IF news">
+            </div>
+            <div class="busca">
+                <form action="pagina.py" method="get">
+                    <input class="barra-pesquisa" type="search" name="busca" id="busca" placeholder="O que você está procurando?">
+                    <button class="botao-pesquisar"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button>
+                </form>
+            </div>
+            <div class="clima">
+                <div id="ww_26be4f8484406" v='1.3' loc='id' a='{"t":"horizontal","lang":"pt","sl_lpl":1,"ids":["wl4860"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_phw":3,"el_whr":3}'>Weather Data Source: <a href="https://sharpweather.com/weather_natal/" id="ww_26be4f8484406_u" target="_blank">weather for Natal</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_26be4f8484406"></script>
+        </header>
+
+        <nav>
+            <button class="botao-menu">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">cadastro</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">login</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <div class="opcao">
+             
+                <a href="#">Ensino</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                <path
+                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+            </svg>
+              
+            </div>
+            <div class="opcao">
+               
+                <a href="#">Pesquisa</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                    <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
+                    <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
+                  </svg> </div>
+            <div class="opcao">
+               
+                <a href="#">Extensão </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+            </svg>
+                
+            </div>
+            <div class="opcao">
+                <a href="#">Reitoria</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                  </svg></div>
+                
+            <div class="opcao">
+                
+                <a href="#">Diversos</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                    <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                  </svg> </div>
+                
+
+        </aside>
+        <main>
+            <div class="noticias">
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <img  class="imagemNoticia"src="images/imagemNoticia.jpg" alt="Imagem da notítcia">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                </div>
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <img  class="imagemNoticia"src="images/imagemNoticia.jpg" alt="Imagem da notítcia">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                </div>
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <img  class="imagemNoticia"src="images/imagemNoticia.jpg" alt="Imagem da notítcia">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                    
+                </div>
+                <div class="cardNoticias"> <a class="link-noticia" href="#">
+                    <img  class="imagemNoticia"src="images/imagemNoticia.jpg" alt="Imagem da notítcia">
+                    <h4>Título da notícia</h4>
+                    <span>29/11/2022</span></a>
+                
+                </div>  
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <img  class="imagemNoticia"src="images/imagemNoticia.jpg" alt="Imagem da notítcia">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                </div>  
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <img  class="imagemNoticia"src="images/imagemNoticia.jpg" alt="Imagem da notítcia">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                </div>  
+            </div>
+            <div class="divPublicidade">
+                <img class="bannerPublicidade" src="images/bannerPublicidade.jpg" alt="Banner de publicidade">
+            </div>
+
+            <div class="noticias">
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                </div>
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                </div>
+                <div class="cardNoticias">
+                    <a class="link-noticia" href="#">
+                        <h4>Título da notícia</h4>
+                        <span>29/11/2022</span></a>
+                </div>
+            </div>
+          
+        
+        </main>
+        <footer>
+            <div class="informacoes">
+             <h4>IFRN - Canguaretama</h4>
+             <span>160 BR-101, S/N - Areia Branca, Canguaretama - RN, 59190-000</span>
+
+            </div>
+            <div class="link-rodape">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="http://portal.ifrn.edu.br/campus/canguaretama/">Site do IFRN</a></li>
+                    <li><a href="https://suap.ifrn.edu.br/">SUAP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
